@@ -1,0 +1,283 @@
+test> use("Poornima");
+|
+switched to db Poornima
+Poornima> db.Student.drop();
+|
+true
+Poornima> db.Student.insertMany([
+|   {
+|     studentId: "PCEA24IT101",
+|     name: "Rohan Malhotra",
+|     department: "Information Technology",
+|     graduationYear: 2028,
+|     cgpa: 8.2,
+|     address: {
+|       street: "14 Nirman Nagar",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302019",
+|       country: "India"
+|     },
+|     skills: ["C#", "ASP.NET", "SQL Server"]
+|   },
+|   {
+|     studentId: "PCEA24IT102",
+|     name: "Priya Nair",
+|     department: "Computer Science",
+|     graduationYear: 2027,
+|     cgpa: 9.3,
+|     address: {
+|       street: "22 Vaishali Nagar",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302021",
+|       country: "India"
+|     },
+|     skills: ["Java", "Spring", "Kafka", "Kubernetes"]
+|   },
+|   {
+|     studentId: "PCEA24IT103",
+|     name: "Aryan Chopra",
+|     department: "Electronics & Communication",
+|     graduationYear: 2026,
+|     cgpa: 7.7,
+|     address: {
+|       street: "8 Malviya Nagar",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302017",
+|       country: "India"
+|     },
+|     skills: ["VHDL", "Embedded C", "Arduino"]
+|   },
+|   {
+|     studentId: "PCEA24IT104",
+|     name: "Sanya Kapoor",
+|     department: "Information Technology",
+|     graduationYear: 2028,
+|     cgpa: 8.6,
+|     address: {
+|       street: "31 C-Scheme",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302001",
+|       country: "India"
+|     },
+|     skills: ["Python", "FastAPI", "PostgreSQL"]
+|   },
+|   {
+|     studentId: "PCEA24IT105",
+|     name: "Kunal Bhatt",
+|     department: "Mechanical Engineering",
+|     graduationYear: 2025,
+|     cgpa: 7.2,
+|     address: {
+|       street: "19 Jagatpura",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302025",
+|       country: "India"
+|     },
+|     skills: ["ANSYS", "CATIA", "Fluid Mechanics"]
+|   },
+|   {
+|     studentId: "PCEA24IT106",
+|     name: "Tara Iyer",
+|     department: "Computer Science",
+|     graduationYear: 2027,
+|     cgpa: 9.5,
+|     address: {
+|       street: "50 Raja Park",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302004",
+|       country: "India"
+|     },
+|     skills: ["Go", "React", "GCP", "Terraform"]
+|   },
+|   {
+|     studentId: "PCEA24IT107",
+|     name: "Dev Choudhary",
+|     department: "Civil Engineering",
+|     graduationYear: 2026,
+|     cgpa: 7.0,
+|     address: {
+|       street: "27 Sanganer",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302029",
+|       country: "India"
+|     },
+|     skills: ["Revit", "STAAD Pro", "Surveying"]
+|   },
+|   {
+|     studentId: "PCEA24IT108",
+|     name: "Meera Desai",
+|     department: "Information Technology",
+|     graduationYear: 2028,
+|     cgpa: 8.8,
+|     address: {
+|       street: "60 Bani Park",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302016",
+|       country: "India"
+|     },
+|     skills: ["Vue.js", "Node.js", "Redis", "Docker"]
+|   },
+|   {
+|     studentId: "PCEA24IT109",
+|     name: "Yash Trivedi",
+|     department: "Electrical Engineering",
+|     graduationYear: 2025,
+|     cgpa: 7.9,
+|     address: {
+|       street: "15 Mansarovar",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302020",
+|       country: "India"
+|     },
+|     skills: ["SCADA", "Power Electronics", "MATLAB"]
+|   },
+|   {
+|     studentId: "PCEA24IT110",
+|     name: "Ira Bhatia",
+|     department: "Computer Science",
+|     graduationYear: 2027,
+|     cgpa: 9.0,
+|     address: {
+|       street: "40 Ajmer Road",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302006",
+|       country: "India"
+|     },
+|     skills: ["C++", "Data Structures", "Competitive Programming"]
+|   },
+|   {
+|     studentId: "PCEA24IT111",
+|     name: "Aarush Sethi",
+|     department: "Information Technology",
+|     graduationYear: 2026,
+|     cgpa: 7.6,
+|     address: {
+|       street: "72 Durgapura",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302018",
+|       country: "India"
+|     },
+|     skills: ["PHP", "Laravel", "MySQL"]
+|   },
+|   {
+|     studentId: "PCEA24IT112",
+|     name: "Nisha Rao",
+|     department: "Mechanical Engineering",
+|     graduationYear: 2025,
+|     cgpa: 8.1,
+|     address: {
+|       street: "6 Vidhyadhar Nagar",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302023",
+|       country: "India"
+|     },
+|     skills: ["SolidWorks", "GD&T", "Robotics"]
+|   },
+|   {
+|     studentId: "PCEA24IT113",
+|     name: "Ved Kulkarni",
+|     department: "Computer Science",
+|     graduationYear: 2028,
+|     cgpa: 8.9,
+|     address: {
+|       street: "21 Jhotwara",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302012",
+|       country: "India"
+|     },
+|     skills: ["PyTorch", "NLP", "Flask", "Docker"]
+|   },
+|   {
+|     studentId: "PCEA24IT114",
+|     name: "Riya Menon",
+|     department: "Electronics & Communication",
+|     graduationYear: 2026,
+|     cgpa: 7.3,
+|     address: {
+|       street: "33 Gopalpura Bypass",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302019",
+|       country: "India"
+|     },
+|     skills: ["FPGA", "DSP", "MATLAB"]
+|   },
+|   {
+|     studentId: "PCEA24IT115",
+|     name: "Shourya Sharma",
+|     department: "Information Technology",
+|     graduationYear: 2028,
+|     cgpa: 8.5,
+|     address: {
+|       street: "3 Gopalpura Bypass",
+|       city: "Jaipur",
+|       state: "Rajasthan",
+|       pincode: "302019",
+|       country: "India"
+|     },
+|     skills: ["Java", "Python", "MongoDB", "React", "Git"]
+|   }
+| ]);
+|
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('7bb94b6a07a934e4cf2b9fa3'),
+    '1': ObjectId('7bb94b6a07a934e4cf2b9fa4'),
+    '2': ObjectId('7bb94b6a07a934e4cf2b9fa5'),
+    '3': ObjectId('7bb94b6a07a934e4cf2b9fa6'),
+    '4': ObjectId('7bb94b6a07a934e4cf2b9fa7'),
+    '5': ObjectId('7bb94b6a07a934e4cf2b9fa8'),
+    '6': ObjectId('7bb94b6a07a934e4cf2b9fa9'),
+    '7': ObjectId('7bb94b6a07a934e4cf2b9faa'),
+    '8': ObjectId('7bb94b6a07a934e4cf2b9fab'),
+    '9': ObjectId('7bb94b6a07a934e4cf2b9fac'),
+    '10': ObjectId('7bb94b6a07a934e4cf2b9fad'),
+    '11': ObjectId('7bb94b6a07a934e4cf2b9fae'),
+    '12': ObjectId('7bb94b6a07a934e4cf2b9faf'),
+    '13': ObjectId('7bb94b6a07a934e4cf2b9fb0'),
+    '14': ObjectId('7bb94b6a07a934e4cf2b9fb1')
+  }
+}
+Poornima> print("Total documents inserted: " + db.Student.countDocuments());
+|
+Total documents inserted: 15
+
+Poornima> print("Total documents inserted: " + db.Student.countDocuments());
+| print("Sample document:");
+| printjson(db.Student.findOne({ studentId: "PCEA24IT101" }));
+Total documents inserted: 15
+Sample document:
+{
+  _id: ObjectId('7bb94b6a07a934e4cf2b9fa3'),
+  studentId: 'PCEA24IT101',
+  name: 'Rohan Malhotra',
+  department: 'Information Technology',
+  graduationYear: 2028,
+  cgpa: 8.2,
+  address: {
+    street: '14 Nirman Nagar',
+    city: 'Jaipur',
+    state: 'Rajasthan',
+    pincode: '302019',
+    country: 'India'
+  },
+  skills: [
+    'C#',
+    'ASP.NET',
+    'SQL Server'
+  ]
+}
