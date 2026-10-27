@@ -163,7 +163,7 @@ Atlas atlas-kc3obo-shard-0 [primary] mongodb_index_lab> db.students
     '$db': 'mongodb_index_lab'
   },
   serverInfo: {
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net',
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net',
     port: 27017,
     version: '8.0.34',
     gitVersion: '51db4515a6597aedcf6188ee4e48a27e65b065ae'
@@ -311,7 +311,7 @@ Atlas atlas-kc3obo-shard-0 [primary] mongodb_index_lab> db.students
     '$db': 'mongodb_index_lab'
   },
   serverInfo: {
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net',
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net',
     port: 27017,
     version: '8.0.34',
     gitVersion: '51db4515a6597aedcf6188ee4e48a27e65b065ae'
@@ -431,7 +431,7 @@ Atlas atlas-kc3obo-shard-0 [primary] mongodb_index_lab> db.students
     '$db': 'mongodb_index_lab'
   },
   serverInfo: {
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net',
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net',
     port: 27017,
     version: '8.0.34',
     gitVersion: '51db4515a6597aedcf6188ee4e48a27e65b065ae'
@@ -538,7 +538,7 @@ Atlas atlas-kc3obo-shard-0 [primary] mongodb_index_lab> db.students
   queryShapeHash: 'A52345ABC6B614E192CB330FD9FD5D5EEB0D797ED0E725AE7A5272BA93DA669A',
   command: { find: 'students', filter: { age: 20 }, '$db': 'mongodb_index_lab' },
   serverInfo: {
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net',
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net',
     port: 27017,
     version: '8.0.34',
     gitVersion: '51db4515a6597aedcf6188ee4e48a27e65b065ae'
@@ -716,7 +716,7 @@ Atlas atlas-kc3obo-shard-0 [primary] mongodb_index_lab> db.students.find({ name:
     '$db': 'mongodb_index_lab'
   },
   serverInfo: {
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net',
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net',
     port: 27017,
     version: '8.0.34',
     gitVersion: '51db4515a6597aedcf6188ee4e48a27e65b065ae'
@@ -806,7 +806,7 @@ Atlas atlas-kc3obo-shard-0 [primary] mongodb_index_lab> // Normal query
     '$db': 'mongodb_index_lab'
   },
   serverInfo: {
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net',
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net',
     port: 27017,
     version: '8.0.34',
     gitVersion: '51db4515a6597aedcf6188ee4e48a27e65b065ae'
@@ -955,7 +955,7 @@ Atlas atlas-kc3obo-shard-0 [primary] mongodb_index_lab> db.students
     '$db': 'mongodb_index_lab'
   },
   serverInfo: {
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net',
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net',
     port: 27017,
     version: '8.0.34',
     gitVersion: '51db4515a6597aedcf6188ee4e48a27e65b065ae'
@@ -1121,7 +1121,7 @@ Atlas atlas-kc3obo-shard-0 [primary] mongodb_index_lab> db.students
     '$db': 'mongodb_index_lab'
   },
   serverInfo: {
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net',
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net',
     port: 27017,
     version: '8.0.34',
     gitVersion: '51db4515a6597aedcf6188ee4e48a27e65b065ae'
@@ -1169,55 +1169,55 @@ Atlas atlas-kc3obo-shard-0 [primary] mongodb_index_lab> // Check database
     name: 'marks_-1',
     key: { marks: -1 },
     accesses: { ops: Long('1'), since: ISODate('2026-10-27T03:09:43.457Z') },
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017'
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017'
   },
   {
     name: 'course_marks_idx',
     key: { course: 1, marks: -1 },
     accesses: { ops: Long('1'), since: ISODate('2026-10-27T03:10:15.069Z') },
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017'
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017'
   },
   {
     name: 'age_test_idx',
     key: { age: 1 },
     accesses: { ops: Long('0'), since: ISODate('2026-10-27T03:12:32.797Z') },
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017'
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017'
   },
   {
     name: 'skills_idx',
     key: { skills: 1 },
     accesses: { ops: Long('2'), since: ISODate('2026-10-27T03:10:24.156Z') },
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017'
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017'
   },
   {
     name: 'unique_city_test',
     key: { city: 1 },
     accesses: { ops: Long('0'), since: ISODate('2026-10-27T03:12:46.163Z') },
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017'
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017'
   },
   {
     name: 'city_course_idx',
     key: { city: 1, course: 1 },
     accesses: { ops: Long('1'), since: ISODate('2026-10-27T03:09:57.025Z') },
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017'
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017'
   },
   {
     name: 'name_1',
     key: { name: 1 },
     accesses: { ops: Long('1'), since: ISODate('2026-10-27T03:09:32.844Z') },
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017'
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017'
   },
   {
     name: '_id_',
     key: { _id: 1 },
     accesses: { ops: Long('0'), since: ISODate('2026-10-27T03:09:32.837Z') },
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017'
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017'
   },
   {
     name: 'marks_course_alternative',
     key: { marks: -1, course: 1 },
     accesses: { ops: Long('0'), since: ISODate('2026-10-27T03:13:50.257Z') },
-    host: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017'
+    host: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017'
   }
 ]
 Atlas atlas-kc3obo-shard-0 [primary] mongodb_index_lab>

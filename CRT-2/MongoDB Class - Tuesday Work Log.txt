@@ -1,10 +1,10 @@
 PS C:\Users\stuti agrawal> $mongoshPath = "$env:LOCALAPPDATA\Programs\mongosh\mongosh.exe"
 PS C:\Users\stuti agrawal>
-PS C:\Users\stuti agrawal> & $mongoshPath "mongodb+srv://stutidb.d7gaonp.mongodb.net/" --apiVersion 1 --username "stutiagrawal255_db_user"
+PS C:\Users\stuti agrawal> & $mongoshPath "mongodb+srv://stutidb.d7gaonp.mongodb.net/" --username "stutiagrawal255_db_user"
 Enter password: ****************
 Current Mongosh Log ID: 6ae064edb810f36adb036b3b
 Connecting to:          mongodb+srv://<credentials>@stutidb.d7gaonp.mongodb.net/?appName=mongosh+2.14.0
-Using MongoDB:          8.0.34 (API Version 1)
+Using MongoDB:          8.0.34
 Using Mongosh:          2.14.0
 
 For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
@@ -15,15 +15,15 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> db.adminCommand({ hellhell
 {
   topologyVersion: { processId: ObjectId('6adfaad32ed7731c798dd6d1'), counter: Long('6') },
   hosts: [
-    'ac-kc3obo0-shard-00-00.d7gaonp.mongodb.net:27017',
-    'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
-    'ac-kc3obo0-shard-00-02.d7gaonp.mongodb.net:27017'
+    'ac-0wxjxgv-shard-00-00.d7gaonp.mongodb.net:27017',
+    'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
+    'ac-0wxjxgv-shard-00-02.d7gaonp.mongodb.net:27017'
   ],
   setName: 'atlas-kc3obo-shard-0',
   setVersion: 107,
   isWritablePrimary: true,
   secondary: false,
-  primary: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+  primary: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
   tags: {
     workloadType: 'OPERATIONAL',
     availabilityZone: 'aps1-az3',
@@ -33,7 +33,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> db.adminCommand({ hellhell
     diskState: 'READY',
     nodeType: 'ELECTABLE'
   },
-  me: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+  me: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
   electionId: ObjectId('7fffffff00000000000000f7'),
   lastWrite: {
     opTime: { ts: Timestamp({ t: 1793089245, i: 9 }), t: Long('247') },
@@ -103,7 +103,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
   members: [
     {
       _id: 0,
-      name: 'ac-kc3obo0-shard-00-00.d7gaonp.mongodb.net:27017',
+      name: 'ac-0wxjxgv-shard-00-00.d7gaonp.mongodb.net:27017',
       health: 1,
       state: 2,
       stateStr: 'SECONDARY',
@@ -121,7 +121,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
       lastHeartbeatRecv: ISODate('2026-10-27T08:20:49.303Z'),
       pingMs: Long('0'),
       lastHeartbeatMessage: '',
-      syncSourceHost: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+      syncSourceHost: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
       syncSourceId: 1,
       infoMessage: '',
       configVersion: 107,
@@ -129,7 +129,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
     },
     {
       _id: 1,
-      name: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+      name: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
       health: 1,
       state: 1,
       stateStr: 'PRIMARY',
@@ -153,7 +153,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
     },
     {
       _id: 2,
-      name: 'ac-kc3obo0-shard-00-02.d7gaonp.mongodb.net:27017',
+      name: 'ac-0wxjxgv-shard-00-02.d7gaonp.mongodb.net:27017',
       health: 1,
       state: 2,
       stateStr: 'SECONDARY',
@@ -171,7 +171,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
       lastHeartbeatRecv: ISODate('2026-10-27T08:20:50.491Z'),
       pingMs: Long('0'),
       lastHeartbeatMessage: '',
-      syncSourceHost: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+      syncSourceHost: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
       syncSourceId: 1,
       infoMessage: '',
       configVersion: 107,
@@ -212,15 +212,15 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> db.adminCommand({ hellhell
 {
   topologyVersion: { processId: ObjectId('6adfaad32ed7731c798dd6d1'), counter: Long('6') },
   hosts: [
-    'ac-kc3obo0-shard-00-00.d7gaonp.mongodb.net:27017',
-    'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
-    'ac-kc3obo0-shard-00-02.d7gaonp.mongodb.net:27017'
+    'ac-0wxjxgv-shard-00-00.d7gaonp.mongodb.net:27017',
+    'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
+    'ac-0wxjxgv-shard-00-02.d7gaonp.mongodb.net:27017'
   ],
   setName: 'atlas-kc3obo-shard-0',
   setVersion: 107,
   isWritablePrimary: true,
   secondary: false,
-  primary: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+  primary: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
   tags: {
     provider: 'AWS',
     region: 'AP_SOUTH_1',
@@ -230,7 +230,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> db.adminCommand({ hellhell
     nodeType: 'ELECTABLE',
     diskState: 'READY'
   },
-  me: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+  me: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
   electionId: ObjectId('7fffffff00000000000000f7'),
   lastWrite: {
     opTime: { ts: Timestamp({ t: 1793089265, i: 81 }), t: Long('247') },
@@ -258,12 +258,12 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> db.adminCommand({ hellhell
   operationTime: Timestamp({ t: 1793089265, i: 81 })
 }
 Atlas atlas-kc3obo-shard-0 [primary] replication_lab> db.adminCommand({ hellhello: 1 }).primary
-ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017
+ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017
 Atlas atlas-kc3obo-shard-0 [primary] replication_lab> db.adminCommand({ hellhello: 1 }).hosts
 [
-  'ac-kc3obo0-shard-00-00.d7gaonp.mongodb.net:27017',
-  'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
-  'ac-kc3obo0-shard-00-02.d7gaonp.mongodb.net:27017'
+  'ac-0wxjxgv-shard-00-00.d7gaonp.mongodb.net:27017',
+  'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
+  'ac-0wxjxgv-shard-00-02.d7gaonp.mongodb.net:27017'
 ]
 Atlas atlas-kc3obo-shard-0 [primary] replication_lab> db.adminCommand({ hellhello: 1 }).isWritablePrimary
 true
@@ -310,7 +310,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
   members: [
     {
       _id: 0,
-      name: 'ac-kc3obo0-shard-00-00.d7gaonp.mongodb.net:27017',
+      name: 'ac-0wxjxgv-shard-00-00.d7gaonp.mongodb.net:27017',
       health: 1,
       state: 2,
       stateStr: 'SECONDARY',
@@ -328,7 +328,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
       lastHeartbeatRecv: ISODate('2026-10-27T08:21:21.303Z'),
       pingMs: Long('0'),
       lastHeartbeatMessage: '',
-      syncSourceHost: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+      syncSourceHost: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
       syncSourceId: 1,
       infoMessage: '',
       configVersion: 107,
@@ -336,7 +336,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
     },
     {
       _id: 1,
-      name: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+      name: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
       health: 1,
       state: 1,
       stateStr: 'PRIMARY',
@@ -360,7 +360,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
     },
     {
       _id: 2,
-      name: 'ac-kc3obo0-shard-00-02.d7gaonp.mongodb.net:27017',
+      name: 'ac-0wxjxgv-shard-00-02.d7gaonp.mongodb.net:27017',
       health: 1,
       state: 2,
       stateStr: 'SECONDARY',
@@ -378,7 +378,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
       lastHeartbeatRecv: ISODate('2026-10-27T08:21:20.506Z'),
       pingMs: Long('0'),
       lastHeartbeatMessage: '',
-      syncSourceHost: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+      syncSourceHost: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
       syncSourceId: 1,
       infoMessage: '',
       configVersion: 107,
@@ -476,15 +476,15 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> db.adminCommand({ hellhell
 {
   topologyVersion: { processId: ObjectId('6adfaad32ed7731c798dd6d1'), counter: Long('6') },
   hosts: [
-    'ac-kc3obo0-shard-00-00.d7gaonp.mongodb.net:27017',
-    'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
-    'ac-kc3obo0-shard-00-02.d7gaonp.mongodb.net:27017'
+    'ac-0wxjxgv-shard-00-00.d7gaonp.mongodb.net:27017',
+    'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
+    'ac-0wxjxgv-shard-00-02.d7gaonp.mongodb.net:27017'
   ],
   setName: 'atlas-kc3obo-shard-0',
   setVersion: 107,
   isWritablePrimary: true,
   secondary: false,
-  primary: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+  primary: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
   tags: {
     cacheState: 'READY',
     workloadType: 'OPERATIONAL',
@@ -494,7 +494,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> db.adminCommand({ hellhell
     region: 'AP_SOUTH_1',
     availabilityZone: 'aps1-az3'
   },
-  me: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+  me: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
   electionId: ObjectId('7fffffff00000000000000f7'),
   lastWrite: {
     opTime: { ts: Timestamp({ t: 1793089325, i: 49 }), t: Long('247') },
@@ -564,7 +564,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
   members: [
     {
       _id: 0,
-      name: 'ac-kc3obo0-shard-00-00.d7gaonp.mongodb.net:27017',
+      name: 'ac-0wxjxgv-shard-00-00.d7gaonp.mongodb.net:27017',
       health: 1,
       state: 2,
       stateStr: 'SECONDARY',
@@ -582,7 +582,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
       lastHeartbeatRecv: ISODate('2026-10-27T08:22:09.303Z'),
       pingMs: Long('0'),
       lastHeartbeatMessage: '',
-      syncSourceHost: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+      syncSourceHost: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
       syncSourceId: 1,
       infoMessage: '',
       configVersion: 107,
@@ -590,7 +590,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
     },
     {
       _id: 1,
-      name: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+      name: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
       health: 1,
       state: 1,
       stateStr: 'PRIMARY',
@@ -614,7 +614,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
     },
     {
       _id: 2,
-      name: 'ac-kc3obo0-shard-00-02.d7gaonp.mongodb.net:27017',
+      name: 'ac-0wxjxgv-shard-00-02.d7gaonp.mongodb.net:27017',
       health: 1,
       state: 2,
       stateStr: 'SECONDARY',
@@ -632,7 +632,7 @@ Atlas atlas-kc3obo-shard-0 [primary] replication_lab> rs.status()
       lastHeartbeatRecv: ISODate('2026-10-27T08:22:08.529Z'),
       pingMs: Long('0'),
       lastHeartbeatMessage: '',
-      syncSourceHost: 'ac-kc3obo0-shard-00-01.d7gaonp.mongodb.net:27017',
+      syncSourceHost: 'ac-0wxjxgv-shard-00-01.d7gaonp.mongodb.net:27017',
       syncSourceId: 1,
       infoMessage: '',
       configVersion: 107,
